@@ -37,7 +37,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("tu-imagen.png") center/cover no-repeat;
+  background: url("./images_spotify/fondo_vinyl.png") center/cover no-repeat;
   background-attachment: fixed;
   position: relative;
   display: flex;
@@ -67,10 +67,6 @@ body {
   margin-top: 10px;
   opacity: 0.8;
   color: #ccc;
-}
-
-.hero {
-  background: url("/images_spotify/fondo2.jpg") center/cover no-repeat;
 }
 
 .overlay {
