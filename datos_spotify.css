@@ -79,7 +79,7 @@ body {
 /* SECCIONES */
 .section {
   min-height: 100vh;
-  padding: 120px 10%;
+  padding: 30px 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,9 +92,11 @@ body {
 
 /* ANIMACIONES */
 .fade-up {
-  opacity: 0;
+  opacity: 100%;
   transform: translateY(50px);
   transition: all 1s ease;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .fade-up.visible {
@@ -105,132 +107,17 @@ body {
 /* EJEMPLO BARRAS */
 .grafico {
   display: flex;
-  gap: 20px;
+  gap: 100px;
+  margin-bottom: 80px;
 }
 
-.bar {
-  width: 50px;
-  height: 0;
-  background: white;
-  transition: height 1s ease;
-}
-
-.bar.visible:nth-child(1) { height: 100px; }
-.bar.visible:nth-child(2) { height: 150px; }
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-body {
-  background: black;
-  color: white;
-}
-
-/* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 15px;
-  gap: 30px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  background: url("tu-imagen.png") center/cover no-repeat;
-  background-attachment: fixed;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5); /* máscara */
-}
-
-.hero-text {
-  position: relative;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 4rem;
-  letter-spacing: 2px;
-}
-
-.hero h2 {
-  font-size: 1.5rem;
+.text {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1rem;
   margin-top: 10px;
   opacity: 0.8;
   color: #ccc;
-}
-
-.hero {
-  background: url("/images_spotify/fondo2.jpg") center/cover no-repeat;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-
-/* SECCIONES */
-.section {
-  min-height: 100vh;
-  padding: 120px 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-/* ANIMACIONES */
-.fade-up {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* EJEMPLO BARRAS */
-.grafico {
-  display: flex;
-  gap: 20px;
 }
 
 .bar {

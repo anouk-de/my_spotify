@@ -11,9 +11,10 @@
   <nav class="navbar">
     <ul>
       <li><a href="#hero">Inicio</a></li>
-      <li><a href="#grafico1">Top artistas</a></li>
-      <li><a href="#grafico2">Géneros</a></li>
-      <li><a href="#grafico3">Evolución</a></li>
+      <li><a href="#grafico1">Evolución por año</a></li>
+      <li><a href="#grafico2">Top 5 Álbumes</a></li>
+      <li><a href="#grafico3">¿Cuándo escucho música?</a></li>
+      <li><a href="#grafico4">¿Dónde estuve durante el intercambio? </a></li>
     </ul>
   </nav>
 
@@ -22,92 +23,118 @@
     <div class="overlay"></div>
     <div class="hero-text">
       <h1>Anouk en Spotify</h1>
-      <h2>Una década de música</h2>
+      <h2>A través de los años</h2>
     </div>
   </section>
 
   <!-- SECCIÓN 1 -->
   <section id="grafico1" class="section">
-    <h2 class="fade-up">Top artistas más escuchados</h2>
+    <h2 class="fade-up">¿Cómo ha evolucionado mi consumo anual de música y qué artistas lo lideraron en cada período?</h2>
     <div class="grafico fade-up">
-      <!-- acá va tu gráfico -->
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+      <div class='tableauPlaceholder' id='viz1777273497929' style='position: relative'>
+        <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cu&#47;Culesfueronmisartistasmsescuchados&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='Culesfueronmisartistasmsescuchados&#47;Dashboard2' />
+          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cu&#47;Culesfueronmisartistasmsescuchados&#47;Dashboard2&#47;1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='es-ES' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>                
+      <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1777273497929');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      if ( divElement.offsetWidth > 800 ) { 
+        vizElement.style.minWidth='420px';
+        vizElement.style.maxWidth='1650px';
+        vizElement.style.width='100%';
+        vizElement.style.minHeight='587px';
+        vizElement.style.maxHeight='887px';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else if ( divElement.offsetWidth > 500 ) { 
+        vizElement.style.minWidth='420px';
+        vizElement.style.maxWidth='1650px';
+        vizElement.style.width='100%';
+        vizElement.style.minHeight='587px';
+        vizElement.style.maxHeight='887px';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else if ( divElement.offsetWidth > 500 ) { 
+        vizElement.style.minWidth='420px';
+        vizElement.style.maxWidth='1650px';
+        vizElement.style.width='100%';
+        vizElement.style.minHeight='587px';
+        vizElement.style.maxHeight='887px';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
     </div>
+    <div class="text">
+        <p>Esta visualización presenta la cantidad total de minutos escuchados por año, junto con el artista más escuchado en cada uno de ellos. El gráfico de barras permite identificar tendencias temporales en el consumo musical, evidenciando cambios en las preferencias musicales, así como también la aparición de nuevos artistas.</p></br>
+        <p>Adicionalmente, incorpora un nivel de análisis más detallado mediante una funcionalidad interactiva: al seleccionar una barra, se accede a un treemap que descompone la información del año correspondiente por mes. Este permite observar la distribución mensual del consumo y reconocer los artistas predominantes en cada período. En conjunto, la visualización ofrece tanto una perspectiva agregada como un análisis desagregado del comportamiento musical.</p>
+      </div>
+      
   </section>
 
   <!-- SECCIÓN 2 -->
   <section id="grafico2" class="section">
-    <h2 class="fade-up">Distribución por géneros</h2>
+    <h2 class="fade-up">Top 5 Álbumes</h2>
     <div class="grafico fade-up">
-      <!-- gráfico -->
+      <div class="flourish-embed flourish-chart" data-src="visualisation/28708348">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript><img src="https://public.flourish.studio/visualisation/28708348/thumbnail" width="100%" alt="chart visualization" /></noscript>
+      </div>
+    </div>
+    <div class="text">
+      <p>Esta visualización representa el top 5 de álbumes más escuchados por año a través de gráficos tipo donut. Cada gráfico corresponde a un álbum, mientras que sus segmentos internos representan las canciones individuales que lo componen, cuyo tamaño es proporcional a los minutos reproducidos de cada una.</p></br>
+      <p>Este enfoque permite analizar simultáneamente dos niveles de información: por un lado, la relevancia relativa de cada álbum dentro de un año, y por otro, la distribución del consumo entre sus canciones. La incorporación de un filtro temporal facilita la comparación entre años, permitiendo identificar cambios en las preferencias musicales, niveles de concentración de escucha y diversidad de contenidos consumidos.</p></br>
+      <p>Además, se pueden observar patrones estacionales o eventos específicos que hayan influido en el consumo, como lanzamientos de álbumes o conciertos. Esto puede evidenciarse con los álbumes de Taylor Swift o Sabrina Carpenter, los cuales predominaron en los años que lanzaron nuevos álbumes, o la aparición de los álbumes de Inhaler o Royel Otis en 2024 y 2026, debido a que había obtenido entradas para sus conciertos esos años.</p></br>
     </div>
   </section>
 
   <!-- SECCIÓN 3 -->
   <section id="grafico3" class="section">
-    <h2 class="fade-up">Evolución en el tiempo</h2>
+    <h2 class="fade-up">¿Cuándo escucho música?</h2>
     <div class="grafico fade-up">
-      <!-- gráfico -->
+      <div>
+        <object type="image/svg+xml" data="./images_spotify/viz_rawgraph.svg"></object>
+      </div>
+    </div>  
+    <div class="text">
+      <p>El violin plot muestra la distribución de los minutos escuchados a lo largo del día correspondiente al mayor consumo anual. Este tipo de gráfico permite representar no solo valores extremos, sino también la densidad de la distribución, evidenciando en qué franjas horarias escuché más música.</p></br>
+      <p>A partir de esta visualización, es posible identificar patrones en los hábitos de escucha, como la predominancia de consumo en determinados momentos del día. En particular, los datos más recientes sugieren una mayor concentración de escuchaen horarios nocturnos, lo cual puede asociarse a rutinas de estudio nocturno en el caso del 31/03/2019, 14/04/2021 y 21/06/2022, los cuales fueron día domingo, miércoles y martes, respectivamente. El pico de consumo en las otras fechas puede atribuirse al hecho de que entran en el período de vacaciones de verano, más allá de las tendencias personales a funcionar más en horarios nocturnos.</p></br>
     </div>
   </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Anouk en Spotify</title>
-  <link rel="stylesheet" href="./datos_spotify.css">
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#hero">Inicio</a></li>
-      <li><a href="#grafico1">Top artistas</a></li>
-      <li><a href="#grafico2">Géneros</a></li>
-      <li><a href="#grafico3">Evolución</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Anouk en Spotify</h1>
-      <h2>Una década de música</h2>
-    </div>
-  </section>
-
-  <!-- SECCIÓN 1 -->
-  <section id="grafico1" class="section">
-    <h2 class="fade-up">Top artistas más escuchados</h2>
+   <!-- SECCIÓN 4 -->
+  <section id="grafico4" class="section">
+    <h2 class="fade-up">¿Cómo varió mi consumo musical según el país durante mi intercambio en Europa?</h2>
     <div class="grafico fade-up">
-      <!-- acá va tu gráfico -->
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+      <iframe title="¿Dónde estuve según Spotify?" aria-label="Mapa coroplético" id="datawrapper-chart-Fumde" src="https://datawrapper.dwcdn.net/Fumde/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="785" data-external="1"></iframe>
+      <script type="text/javascript">
+      window.addEventListener("message",function(a){
+        if(void 0!==a.data["datawrapper-height"]){
+          var e=document.querySelectorAll("iframe");
+          for(var t in a.data["datawrapper-height"])
+          for(var r,i=0;r=e[i];i++)
+        if(r.contentWindow===a.source){
+          var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});
+      </script>
     </div>
-  </section>
-
-  <!-- SECCIÓN 2 -->
-  <section id="grafico2" class="section">
-    <h2 class="fade-up">Distribución por géneros</h2>
-    <div class="grafico fade-up">
-      <!-- gráfico -->
-    </div>
-  </section>
-
-  <!-- SECCIÓN 3 -->
-  <section id="grafico3" class="section">
-    <h2 class="fade-up">Evolución en el tiempo</h2>
-    <div class="grafico fade-up">
-      <!-- gráfico -->
+    <div class="text">
+      <p>Esta visualización presenta un mapa de Europa en el que se destacan los países visitados durante mi período de intercambio. </p></br>
+      <p>Cada país está representado mediante una escala de color cuya intensidad refleja el promedio de minutos escuchados por día, permitiendo comparar el nivel de consumo musical en los distintos países a pesar de que la estadía en cada uno de ellos haya variado.</p></br>
+      <p>Asimismo, la visualización incorpora elementos interactivos que enriquecen el análisis: al posicionarse sobre cada país, se despliega información adicional, incluyendo los minutos totales escuchados, el promedio diario y un enlace a una playlist asociada con las canciones más escuchadas durante el viaje. De este modo, el gráfico combina análisis cuantitativo con una dimensión contextual, vinculando los datos con experiencias específicas del recorrido.</p></br>
     </div>
   </section>
 
